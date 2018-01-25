@@ -1,3 +1,5 @@
+type gps_data_file, file_type, data_file_type;
+
 # Access .gps.interface.pipe.to_gpsd.
 allow system_server gps_data_file:dir rw_dir_perms;
 allow system_server gps_data_file:fifo_file { setattr rw_file_perms create };
